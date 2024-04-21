@@ -69,7 +69,6 @@ namespace MouseClickTool
             InitializeComponent();
             Icon = SystemIcons.Application;
             clickType.SelectedIndex = 0;
-            btnUrl.Click += (__, _) => ShellExecute(0, "open", btnUrl.Text, "", "", 1);
             btnClose.Click += (__, _) =>
             {
                 isRunning = false;
